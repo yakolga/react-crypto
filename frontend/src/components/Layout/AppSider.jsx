@@ -8,7 +8,8 @@ const siderStyle = {
   textAlign: 'left',
   lineHeight: '120px',
   color: '#fff',
-  padding: '1rem'
+  padding: '1rem',
+  overflow: 'scroll'
 };
 
 export default function AppSider() {
@@ -29,7 +30,6 @@ export default function AppSider() {
                         dataSource={[
                             {title: 'Total Profit', value: item.totalProfit, withTag: true},
                             {title: 'Asset Amount', value: item.amount, isPlane: true},
-                            // {title: 'Difference', value: item.growPercent},
                         ]}
                         renderItem={it => (
                             <List.Item>
